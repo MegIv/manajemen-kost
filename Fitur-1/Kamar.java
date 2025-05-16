@@ -32,7 +32,10 @@ public class Kamar {
     public void setTersedia(boolean tersedia) {
         this.tersedia = tersedia;
     }
+    
     public void tampilkanInfo() {
-        System.out.println("ID: " + id + ", jenis: " + jenis + ", harga: " + harga + ", tersedia: " + tersedia);
+        String status = tersedia ? "tersedia" : "tidak tersedia";
+        System.out.println("ID: " + id + ", jenis: " + jenis + ", harga: " + harga + ", status: " + status);
     }
+
 }
